@@ -11,4 +11,28 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TopDownMain.unity
     guid: 3f630d172fd372c4ea90a90b12815848
+  - enabled: 1
+    path: Assets/Scenes/VideoStore.unity
+    guid: 0f35303cfed07ae4782eda2b6ad4ac49
+  - enabled: 1
+    path: Assets/Scenes/Staples.unity
+    guid: 6d8c9ae030806c74ea829a9a137c5bd6
+  - enabled: 1
+    path: Assets/Scenes/SportsStore.unity
+    guid: 2a9bf4278530375499168d5d5743f157
+  - enabled: 1
+    path: Assets/Scenes/Playground.unity
+    guid: aa30ab26df262cb4da0b1a3b996e6b9b
+  - enabled: 1
+    path: Assets/Scenes/MovieTheater.unity
+    guid: 1454785c8318a0d4497f71b1d24086b2
+  - enabled: 1
+    path: Assets/Scenes/JC.unity
+    guid: 06a9f2a2e960175479d80fd42b82448c
+  - enabled: 1
+    path: Assets/Scenes/ForeverForty.unity
+    guid: 02fcb917efd66054caf91b4e44e6e1d0
+  - enabled: 1
+    path: Assets/Scenes/FoodCourt.unity
+    guid: bd0a6996052cdfd4da5e22b6b403cc56
   m_configObjects: {}

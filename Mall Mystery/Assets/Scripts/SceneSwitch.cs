@@ -20,11 +20,6 @@ public class SceneSwitch : MonoBehaviour
         
     }
 
-    public void OnCollisionEnter2D(Collision2D collision)
-    {
-        Debug.Log("hit");
-    }
-
     public void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("hot");
