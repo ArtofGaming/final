@@ -1,15 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Text : MonoBehaviour
 {
-    Text currentText;
+    public TextAsset csvFile;
+    private char lineSeperator = '\n';
+    private char fieldSeperator = ',';
+    public Text contentArea;
     // Start is called before the first frame update
     void Start()
     {
-       
+        readLine();
     }
 
     // Update is called once per frame
@@ -18,11 +20,17 @@ public class Text : MonoBehaviour
         
     }
 
-    void OnTriggerEnter2D(Collision col)
+    void readLine()
     {
-        if (Input.GetMouseButtonDown(0)) 
+        string[] dialogue = csvFile.text.Split(lineSeperator);
+        foreach (string talk in dialogue)
         {
-            currentText = "This is text";
+            string[] text = csvFile.text.Split(fieldSeperator);
+            Debug.Log(text);
+            foreach (string word in text)
+            {
+                contentArea.text += word + '\t';
+            }
         }
     }
 }
