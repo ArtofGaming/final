@@ -123,7 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
-<<<<<<< HEAD
 --- !u!1 &91603201
 GameObject:
   m_ObjectHideFlags: 0
@@ -335,8 +334,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
->>>>>>> a2b56d2125653e6aa86536ca303338e1b9ed0f60
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -732,7 +729,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 582d4d4d3bc304b4ea4c1b77d9b08e00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 91603201}
 --- !u!1001 &852007955
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -833,11 +830,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 582d4d4d3bc304b4ea4c1b77d9b08e00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  player: {fileID: 0}
---- !u!4 &854107952
-Transform:
-=======
   player: {fileID: 91603201}
 --- !u!222 &854107952
 CanvasRenderer:
@@ -862,7 +854,6 @@ MonoBehaviour:
   csvFile: {fileID: 4900000, guid: 904a9d4e79b49f94e8e3c47ada194dc8, type: 3}
 --- !u!224 &854107954
 RectTransform:
->>>>>>> bcbab33f19a2e9be904c79ac69ec32e3d8d25c23
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -873,7 +864,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
