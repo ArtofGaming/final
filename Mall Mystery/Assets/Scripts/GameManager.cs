@@ -19,6 +19,6 @@ public class GameManager : MonoBehaviour
 
     private void OnGUI()
     {
-        GUI.Box(new Rect(20, 20, 150, 25), "Points: " + points);
+        GUI.Box(new Rect(20, 500, 100, 20), "Points: " + points);
     }
 }

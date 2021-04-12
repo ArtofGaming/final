@@ -235,7 +235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 582d4d4d3bc304b4ea4c1b77d9b08e00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: MovieTheater
+  player: {fileID: 0}
 --- !u!61 &1367155313
 BoxCollider2D:
   m_ObjectHideFlags: 0

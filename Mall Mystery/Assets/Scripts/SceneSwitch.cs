@@ -28,7 +28,7 @@ public class SceneSwitch : MonoBehaviour
     public void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("hot");
-        SceneManager.LoadScene(GetComponent<Collider2D>().gameObject.name);
+        SceneManager.LoadScene(collision.gameObject.name);
     }
 
 }
