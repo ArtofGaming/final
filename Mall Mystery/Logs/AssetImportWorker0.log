@@ -979,3 +979,4 @@ Received Import Request.
 Start importing Assets/Sprites/PI-idle-front.png using Guid(fc3994297f9b5fe4da784be098965c31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8baa5fc1326b9e790f4760ec225a10d') in 0.012927 seconds
   Import took 0.015471 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
