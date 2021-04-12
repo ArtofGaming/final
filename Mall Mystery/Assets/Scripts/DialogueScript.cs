@@ -6,33 +6,45 @@ using UnityEngine.UI;
 
 public class DialogueScript : MonoBehaviour
 {
-    public TextAsset file;
-    Text dialogue;
-    char lineCutter = '\n';
-    char squareCutter = ',';
-    int x = 0;
+    public TextAsset file1;
+    public Text dialogue;
+    char lineCutter = ',';
+    char squareCutter = '\n';
+    public int x = 0;
+    public int end = 0;
+    bool nextLine = false;
     // Start is called before the first frame update
     void Start()
     {
-        dialogue.text = "Hi";
+    
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
-        
+        readData();
+        if (Input.GetButtonUp("Fire1") && x < end)
+        {
+            x += 1;
+        }
     }
     void readData ()
     {
-        string[] lines = file.text.Split(lineCutter);
-        foreach(string line in lines)
+        string[] lines = file1.text.Split(new char[] { '\n' });
+        if (end > lines.Length - 1)
         {
-            string[] squares = file.text.Split(squareCutter);
-            foreach(string square in squares)
+            end = lines.Length - 1;
+        }
+        for (int i = 0; i < end; i++)
+        {
+            string[] squares = file1.text.Split(squareCutter);
+            foreach (string square in squares)
             {
-                dialogue.text += squares[x] += "t";
-                x += 1;
+                dialogue.text = squares[x];
+                //dialogue.text += squares[x + 1];
             }
+            dialogue.text += '\n';
         }
     }
+    
 }
