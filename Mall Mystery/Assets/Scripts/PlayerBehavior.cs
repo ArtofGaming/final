@@ -10,7 +10,7 @@ public class PlayerBehavior : MonoBehaviour
     public Animator animator;
 
     Vector2 movement;
-
+    //Checks player input every frame
     void Update()
     {
         // input
@@ -22,7 +22,7 @@ public class PlayerBehavior : MonoBehaviour
         animator.SetFloat("Speed", movement.sqrMagnitude);
 
     }
-
+    //Makes player move
     private void FixedUpdate()
     {
         // movement

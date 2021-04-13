@@ -8,6 +8,7 @@ public class SuspectSelect : MonoBehaviour
     public static bool activate;
     public GameObject suspectTalkUI;
     
+    //Checks current state and switches it
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.T))
@@ -22,12 +23,13 @@ public class SuspectSelect : MonoBehaviour
             }
         }
     }
-
+    //Remove text UI
     public void Resume()
     {
         suspectTalkUI.SetActive(false);
         activate = false;
     }
+    //Shows text UI
     void Pause()
     {
         suspectTalkUI.SetActive(true);

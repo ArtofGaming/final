@@ -6,15 +6,8 @@ using UnityEngine.SceneManagement;
 public class SceneSwitch : MonoBehaviour
 {
     public GameObject player;
-    
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    //Checks to make sure user is not in main scene before taking them back to main scene
     void Update()
     {
         if (Input.GetKeyUp(KeyCode.Escape) && SceneManager.GetActiveScene().name != "TopDownMain")
@@ -23,11 +16,7 @@ public class SceneSwitch : MonoBehaviour
         }
     }
 
-    public void OnCollisionEnter2D(Collision2D collision)
-    {
-        Debug.Log("hit");
-    }
-
+    //Switch scenes
     public void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("hot");

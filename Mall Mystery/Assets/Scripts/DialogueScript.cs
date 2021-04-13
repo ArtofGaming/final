@@ -19,7 +19,7 @@ public class DialogueScript : MonoBehaviour
     
     }
 
-    // Update is called once per frame
+    //Ensure that it only gets trigger for one frame
     void LateUpdate()
     {
         readData();
@@ -28,9 +28,10 @@ public class DialogueScript : MonoBehaviour
             x += 1;
         }
     }
+    //Read from file
     void readData ()
     {
-        // Split the csv based based on the line
+        //Split the csv based based on the line
         string[] lines = file1.text.Split(new char[] { '\n' });
         if (end > lines.Length - 1)
         {
@@ -38,12 +39,11 @@ public class DialogueScript : MonoBehaviour
         }
         for (int i = 0; i < end; i++)
         {
-            //iterate through every line to show the name-value pair
+            //Iterate through every line to show the name-value pair
             string[] squares = file1.text.Split(squareCutter);
             foreach (string square in squares)
             {
                 dialogue.text = squares[x];
-                //dialogue.text += squares[x + 1];
             }
             dialogue.text += '\n';
         }
