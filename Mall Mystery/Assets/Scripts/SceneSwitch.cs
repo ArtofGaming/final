@@ -17,7 +17,10 @@ public class SceneSwitch : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyUp(KeyCode.Escape) && SceneManager.GetActiveScene().name != "TopDownMain")
+        {
+            SceneManager.LoadScene("TopDownMain");
+        }
     }
 
     public void OnCollisionEnter2D(Collision2D collision)

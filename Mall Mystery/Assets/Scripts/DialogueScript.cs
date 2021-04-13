@@ -30,6 +30,7 @@ public class DialogueScript : MonoBehaviour
     }
     void readData ()
     {
+        // Split the csv based based on the line
         string[] lines = file1.text.Split(new char[] { '\n' });
         if (end > lines.Length - 1)
         {
@@ -37,6 +38,7 @@ public class DialogueScript : MonoBehaviour
         }
         for (int i = 0; i < end; i++)
         {
+            //iterate through every line to show the name-value pair
             string[] squares = file1.text.Split(squareCutter);
             foreach (string square in squares)
             {

@@ -4,21 +4,16 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    private int points = 0;
+    public int points = 0;
 
     void Start()
     {
-        
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void OnGUI()
     {
-        GUI.Box(new Rect(20, 500, 100, 20), "Points: " + points);
+        GUI.Box(new Rect(20, 20, 100, 20), "Points: " + points);
     }
 }
